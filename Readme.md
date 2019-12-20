@@ -1,22 +1,22 @@
-## Spring Boot, PostgreSQL, JPA, Hibernate REST API Demo
+## Spring Boot, MySQL, JPA, Hibernate REST API Demo
 
 ## Tutorial
 
 Check out the complete tutorial on the CalliCoder blog -
 
-[Spring Boot, PostgreSQL, JPA, Hibernate RESTful CRUD API Example](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)
+[Spring Boot, MySQL, JPA, Hibernate RESTful CRUD API Example](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)
 
 ## Steps to Setup
 
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/callicoder/spring-boot-postgresql-jpa-hibernate-rest-api-demo.git
+https://github.com/DouglasEleuterio/spring-boot-postgresql-jpa-hibernate-rest-api-demo.git
 ```
 
-**2. Configure PostgreSQL**
+**2. Configure MySQL**
 
-First, create a database named `postgres_demo`. Then, open `src/main/resources/application.properties` file and change the spring datasource username and password as per your PostgreSQL installation.
+First, create a database named `demo`. Then, open `src/main/resources/application.properties` file and change the spring datasource username and password as per your MySQL installation.
 
 **3. Run the app**
 
