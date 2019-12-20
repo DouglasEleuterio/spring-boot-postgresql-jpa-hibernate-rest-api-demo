@@ -5,17 +5,17 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "answers")
-public class Answer extends AuditModel {
+public class Answer extends AuditModel implements Serializable {
+
+    private static final long servialVersionUID = 1L;
+
     @Id
-    @GeneratedValue(generator = "answer_generator")
-    @SequenceGenerator(
-            name = "answer_generator",
-            sequenceName = "answer_sequence",
-            initialValue = 1000
-    )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
 
     @Column(columnDefinition = "text")

@@ -3,17 +3,15 @@ package com.example.postgresdemo.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "questions")
-public class Question extends AuditModel {
+public class Question extends AuditModel implements Serializable {
+    private static final long servialVersionUID = 1L;
+
     @Id
-    @GeneratedValue(generator = "question_generator")
-    @SequenceGenerator(
-            name = "question_generator",
-            sequenceName = "question_sequence",
-            initialValue = 1000
-    )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank
